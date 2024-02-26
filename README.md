@@ -11,10 +11,10 @@ Solution:
 Note: Starting from Mongodb version 6.0 mongo was replaced by mongosh
 
 # mongo commands
-mongosh
-show dbs
-use CatalogDb  --> for create db on mongo
-db.createCollection('Products')  --> for create people collection
+mongosh <hr>
+show dbs <hr>
+use CatalogDb  --> for create db on mongo <hr>
+db.createCollection('Products')  --> for create people collection <hr>
 
 db.Products.insertMany([{ 'Name':'Asus Laptop','Category':'Computers', 'Summary':'Summary', 'Description':'Description', 'ImageFile':'ImageFile', 'Price':54.93 }, { 'Name':'HP Laptop','Category':'Computers', 'Summary':'Summary', 'Description':'Description', 'ImageFile':'ImageFile', 'Price':88.93 } ])
 
