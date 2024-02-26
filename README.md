@@ -1,2 +1,2 @@
 # E-Kart-Shop-Microservice
-Loop-Kart-Microservice
+E-Kart-Microservice
