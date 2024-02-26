@@ -22,6 +22,6 @@ db.Products.find({}).pretty()
 db.Products.remove({})
 
 show databases<hr>
-show collections
+show collections<\n>
 db.Products.find({}).pretty()
 
