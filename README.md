@@ -21,7 +21,7 @@ db.Products.insertMany([{ 'Name':'Asus Laptop','Category':'Computers', 'Summary'
 db.Products.find({}).pretty()
 db.Products.remove({})
 
-show databases
+show databases<hr>
 show collections
 db.Products.find({}).pretty()
 
