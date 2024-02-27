@@ -18,3 +18,15 @@ services:
       - "8000:80"
     depends_on:
       - catalogdb
+
+  ekartweb:
+    container_name: ekartweb
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ServiceUrls:CatalogAPIUrl=http://catalog.api"
+    depends_on:
+      - catalogdb
+      - catalog.api
+    ports:
+      - "8001:80"
+

@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "MicroServies
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{ACB22C38-D7B1-47F7-BC84-442465B0D2C9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{7A8A966F-B9B5-4232-AE70-CFD61CEF1618}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EKartWeb", "WebApps\EKartWeb\EKartWeb.csproj", "{98267059-65F6-4880-8C29-95561026D1EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{ACB22C38-D7B1-47F7-BC84-442465B0D2C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACB22C38-D7B1-47F7-BC84-442465B0D2C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACB22C38-D7B1-47F7-BC84-442465B0D2C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98267059-65F6-4880-8C29-95561026D1EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98267059-65F6-4880-8C29-95561026D1EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98267059-65F6-4880-8C29-95561026D1EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98267059-65F6-4880-8C29-95561026D1EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{91CC7ACF-1E4D-45A9-A399-B89493AB3D8B} = {A799576E-E96E-452B-8386-CEE82CA1084A}
 		{3DA90D08-D626-450E-98FD-96E5ADC03EB4} = {91CC7ACF-1E4D-45A9-A399-B89493AB3D8B}
+		{98267059-65F6-4880-8C29-95561026D1EB} = {7A8A966F-B9B5-4232-AE70-CFD61CEF1618}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5907650E-FE25-46F8-ACC9-D9D9848F4E68}

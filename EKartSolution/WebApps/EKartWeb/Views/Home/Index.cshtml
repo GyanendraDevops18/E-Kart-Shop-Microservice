@@ -1,0 +1,76 @@
+﻿@model IEnumerable<EKartWeb.Models.CatalogModel>
+
+@*<div class="container">
+    <div class="row">
+        <div class="col">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-page="Index">Home</a></li>
+                    <li class="breadcrumb-item"><a asp-page="Product">Category</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>*@
+
+<div class="container">
+    <div class="row">
+
+        <div class="col">
+            <div class="row">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Category
+                            </th>
+                            <th>
+                                Summary
+                            </th>
+                            <th>
+                                Description
+                            </th>
+                            <th>
+                                ImageFile
+                            </th>
+                            <th>
+                                Price
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @item.Name
+                                </td>
+                                <td>
+                                    @item.Category
+                                </td>
+                                <td>
+                                    @item.Summary
+                                </td>
+                                <td>
+                                    @item.Description
+                                </td>
+                                <td>
+                                    @item.ImageFile
+                                </td>
+                                <td>
+                                    @((item.Price).ToString("c"))
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+

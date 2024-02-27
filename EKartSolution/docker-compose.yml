@@ -12,5 +12,11 @@ services:
       context: .
       dockerfile: MicroServies/Catalog/Catalog.API/Dockerfile
 
+  ekartweb:
+    image: ${DOCKER_REGISTRY-}ekartweb
+    build:
+      context: .
+      dockerfile: WebApps/EKartWeb/Dockerfile
+
 volumes:
   mongo_data:
