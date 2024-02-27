@@ -25,3 +25,7 @@ show databases<hr>
 show collections<hr>
 db.Products.find({}).pretty()
 
+# docker container not able to reach localhost
+Fix - update docker desktop
+
+
