@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ekartclient-deployment
+  labels:
+    app: ekartclient
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ekartclient
+  template:
+    metadata:
+      labels:
+        app: ekartclient
+    spec:
+      containers:
+        - name: ekartclient
+          image: ekart.azurecr.io/ekartweb:v2
+          imagePullPolicy: IfNotPresent    
+          ports:
+            - containerPort: 80
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: Development
+            - name: ekartAPIUrl
+              valueFrom:
+                  configMapKeyRef:
+                    name: catalogapi-configmap
+                    key: catalogapi_url
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "0.1"
+            limits:
+              memory: "128Mi"
+              cpu: "0.3"
+      imagePullSecrets:
+        - name: acr-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ekartclient-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: ekartclient
+  ports:
+    - protocol: TCP
+      port: 80           
