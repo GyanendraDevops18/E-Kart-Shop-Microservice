@@ -1,3 +1,4 @@
+# **Source code needs to be refactored.
 # E-Kart-Shop-Microservice
 E-Kart-Microservice
 
@@ -27,5 +28,10 @@ db.Products.find({}).pretty()
 
 # docker container not able to reach localhost
 Fix - update docker desktop
+
+# docker commands altogether.
+![image](https://github.com/GyanendraDevops18/E-Kart-Shop-Microservice/assets/40474661/c5668e65-7a59-4035-8467-11fa83753f66)
+
+
 
 
